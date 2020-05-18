@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles_projects.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+    <title>Fernanda Ribeiro - Projects</title> <!-- Title of the tab-->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+</head>
+<body>
+<nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+
+        <i class="fas fa-bars"></i></label>
+    <label class="logo">Fernanda Ribeiro</label>
+    <ul>
+        <li><a href="index.html">Home</a>
+        </li>
+        <li><a href="projects.html">Projects</a>
+        </li>
+        <li><a href="files/Fernanda_Ribeiro___Curriculum_Vitae.pdf">CV</a>
+        </li>
+        <!--<li><a href="#">Youtube</a>-->
+        <!--</li>-->
+    </ul>
+</nav>
+
+<main>
+    <section class="banner">
+        <div class="home-layer1">
+            <div class="home-layer2">
+                <div class="home-layer3">
+                    <img class="img-banner" src="images/banner.png">
+                    <div class="home" align="center" data-aos="fade-right"> <!-- Used to divide content into sections-->
+                        <h1>Projects</h1>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="main">
+        <div class="main-layer1">
+            <div class="main-layer2">
+                <div class="main-layer3">
+                    <div class="p1" data-aos="fade-up">
+                        <h1 align="center">Predicting brain function from anatomy using geometric deep learning</h1>
+                        <hr>
+                        <br>
+                        <p align="justify">Retinotopic mapping in human visual cortex is known to be remarkably similar across
+                            individuals; however, considerable inter-individual variation does exist, and this variation
+                            has been shown to be directly related to variability in cortical folding patterns and other
+                            anatomical features. In fact, previous studies have shown that one can quite reasonably
+                            predict the functional organization of the visual cortex based solely on cortical
+                            structure (Benson et al., 2012; Benson et al., 2014). However, existing approaches rely on a
+                            rigid structure-function relationship,
+                            a template that is determined by an average retinotopic map. To determine a new individual’s
+                            retinotopic map, these conventional models simply align the individual’s cortical surface
+                            model to the template, followed by interpolation. This procedure ignores the presence of
+                            idiosyncratic structure-function relationships, underlying the individual differences
+                            present in retinotopic maps. Thus, we aimed to build a neural network able to predict
+                            individual differences in retinotopic maps by solely exploiting differences in anatomical
+                            features of the cortical surface.</p>
+                        <p align="justify">
+                            Retinotopic maps are perhaps best represented using
+                            cortical surface models, which is possible as most of the retinotopically organized areas
+                            are located in the cerebral cortex (i.e., the outermost tissue layer of the brain). By
+                            representing the data on a cortical surface model, it is possible to visualize the
+                            retinotopic maps in such a way that the detailed functional organization of each specific
+                            area can be appreciated as well how the layout of each visual area relates to one another
+                            more globally. It has hence become common place for retinotopy data to be represented in
+                            such a
+                            fashion. Pertinently, the Human Connectome Project (HCP - Van Essen et al., 2013) 7T
+                            retinotopy dataset (Benson et al., 2018), the largest
+                            publically available high-resolution retinotopic mapping dataset, uses a cortical surface
+                            representation for all its retinotopy data. Here, we sought to leverage geometric deep
+                            learning techniques (Bronstein et al., 2017) to build a neural network able to interact
+                            directly with the cortical
+                            surface representations of this large open-source HCP dataset to predict individual-specific
+                            retinotopic maps.
+                        </p>
+
+                        <div class="preprint">
+                            <img class="img-preprint" src="images/Fig3_Ribeiro2020.png">
+                            <div class="overlay-preprint">
+                                <div class="preprint-link">Check out our <a class="biorxiv"
+                                                                href="https://www.biorxiv.org/content/10.1101/2020.02.11.934471v1.abstract">preprint</a>!
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <div class="related-conf">
+                            <h2 align="center">Related conferences</h2>
+                            <hr>
+                            <div class="conferences">
+                                <a href="https://twitter.com/OHBMequinoX/status/1240835455878172673">
+                                    <img class="img-conf" src="images/ohbmx.png">
+                                </a>
+                            </div>
+                            <div class="conferences">
+                                <a href="https://openreview.net/forum?id=Nw_trRFjPE">
+                                    <img class="img-conf" src="images/midl2020.jpg">
+                                </a>
+                            </div>
+                            <div class="conferences">
+                                <a href="#">
+                                    <img class="img-conf" src="images/ohbm.jpg">
+                                </a>
+                            </div>
+                            <div class="conferences">
+                                <a href="#">
+                                    <img class="img-conf" src="images/ismrm.jpg">
+                                </a>
+                            </div>
+
+                        </div>
+                    </div> <!-- Used to divide content into sections-->
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer> &copy 2020 - Fernanda L. Ribeiro</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script type="text/javascript">
+    AOS.init({
+        duration: 1000,
+    });
+
+</script>
+</body>
+</html>
