@@ -51,18 +51,20 @@
                         <h1 align="center">Predicting brain function from anatomy using geometric deep learning</h1>
                         <hr>
                         <br>
-                        <p align="justify">Retinotopic mapping in human visual cortex is known to be remarkably similar across
-                            individuals; however, considerable inter-individual variation does exist, and this variation
+                        <p align="justify">Retinotopic mapping in human visual cortex is known to be remarkably similar
+                            across
+                            participants; however, considerable inter-individual variation does exist, and this
+                            variation
                             has been shown to be directly related to variability in cortical folding patterns and other
                             anatomical features. In fact, previous studies have shown that one can quite reasonably
-                            predict the functional organization of the visual cortex based solely on cortical
-                            structure (Benson et al., 2012; Benson et al., 2014). However, existing approaches rely on a
-                            rigid structure-function relationship,
-                            a template that is determined by an average retinotopic map. To determine a new individual’s
-                            retinotopic map, these conventional models simply align the individual’s cortical surface
-                            model to the template, followed by interpolation. This procedure ignores the presence of
-                            idiosyncratic structure-function relationships, underlying the individual differences
-                            present in retinotopic maps. Thus, we aimed to build a neural network able to predict
+                            predict the functional organization of the visual cortex in participants by warping an atlas
+                            or template
+                            (Benson et al., 2014,
+                            2012; Benson and Winawer, 2018) according to their specific anatomical data.
+                            While these approaches are able to provide reasonable estimates of their retinotopic
+                            maps, they have not – when using anatomical information alone – been able to capture the
+                            detailed idiosyncrasies seen in the actual measured maps of those participants. Thus, we
+                            aimed to build a neural network able to predict
                             individual differences in retinotopic maps by solely exploiting differences in anatomical
                             features of the cortical surface.</p>
                         <p align="justify">
@@ -74,7 +76,7 @@
                             area can be appreciated as well how the layout of each visual area relates to one another
                             more globally. It has hence become common place for retinotopy data to be represented in
                             such a
-                            fashion. Pertinently, the Human Connectome Project (HCP - Van Essen et al., 2013) 7T
+                            way. Pertinently, the Human Connectome Project (Van Essen et al., 2013) 7T
                             retinotopy dataset (Benson et al., 2018), the largest
                             publically available high-resolution retinotopic mapping dataset, uses a cortical surface
                             representation for all its retinotopy data. Here, we sought to leverage geometric deep
@@ -88,7 +90,7 @@
                             <img class="img-preprint" src="images/Fig3_Ribeiro2020.png">
                             <div class="overlay-preprint">
                                 <div class="preprint-link">Check out our <a class="biorxiv"
-                                                                href="https://www.biorxiv.org/content/10.1101/2020.02.11.934471v1.abstract">preprint</a>!
+                                                                            href="https://www.biorxiv.org/content/10.1101/2020.02.11.934471v1.abstract">preprint</a>!
                                 </div>
                             </div>
 
