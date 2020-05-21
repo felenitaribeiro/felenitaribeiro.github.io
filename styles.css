@@ -300,23 +300,32 @@ nav li a:hover{
 .related-conf{
     position: relative;
     width: 100%;
+    margin: auto;
 }
 .related-conf hr{
     width: 15%;
+
+}
+.conferences a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .conferences{
     position: relative;
     display: inline-block;
+    alignment: center;
     background-color: whitesmoke;
     box-shadow: 0px 1px 5px #4d4d4dff;
     border-radius: 10% 10%;
-    margin: 3% 3%;
-    width: 17%;
+    margin: 4.3%;
+    width: 16%;
     padding: 3%;
 }
 .conferences:hover{
     height: 18%;
     width: 18%;
+    margin: 3.2%;
     padding: 3.5%;
     background-color: lightslategray;
 }
@@ -375,6 +384,31 @@ footer {
     .home h2{
         font-size: 18px;
         letter-spacing: .5px;
+    }
+
+
+}
+
+@media (max-width: 1100px){
+    .conferences{display: block}
+
+    .block1{display: inline-block;
+        margin: 9%;
+        width: 30%;
+        padding: 3%;
+    }
+
+    .block2{display: inline-block;
+        margin: 9%;
+        width: 30%;
+        padding: 3%;
+    }
+
+    .conferences:hover{
+        height: 32%;
+        width: 32%;
+        margin-left: 8%;
+        margin-right: 8%;
     }
 }
 
