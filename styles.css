@@ -8,7 +8,8 @@
 }
 
 body{
-    background-image: url("images/background.png");
+    /*background-image: url("images/background.png");*/
+    background: #454839ff;
     max-width: 1920px;
     margin: auto;
 }
