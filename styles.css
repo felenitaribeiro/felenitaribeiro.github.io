@@ -386,11 +386,6 @@ footer {
         font-size: 18px;
         letter-spacing: .5px;
     }
-
-
-}
-
-@media (max-width: 1100px){
     .conferences{display: block}
 
     .block1{display: inline-block;
@@ -411,7 +406,9 @@ footer {
         margin-left: 8%;
         margin-right: 8%;
     }
+
 }
+
 
 @media (max-width:910px){
     label.logo{
