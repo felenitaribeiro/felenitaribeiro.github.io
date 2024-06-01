@@ -9,7 +9,7 @@
 
 body{
     /*background-image: url("images/background.png");*/
-    background: #454839ff;
+    background: #90AECF;
     max-width: 1920px;
     margin: auto;
 }
@@ -17,7 +17,7 @@ body{
 /*Navigation panel*/
 
 nav{
-    background: #acb394ff;
+    background: #512465ff;
     height: 60px;
     width:100%;
     position: sticky;
@@ -30,11 +30,11 @@ nav{
 }
 
 label.logo{
-    color:#4d4d4dff;
+    color:#E1EFFF;
     font-size: 30px;
     line-height: 60px;
     padding: 0 50px;
-    letter-spacing: 1px;
+    letter-spacing: .5px;
     font-weight: bold;
 }
 nav ul{
@@ -49,7 +49,7 @@ nav ul li{
 }
 
 nav ul li a{
-    color: #4d4d4dff;
+    color: #90AECF;
     font-size: 20px;
     font-weight: bold;
     text-transform: uppercase;
@@ -58,8 +58,8 @@ nav ul li a{
 
 }
 nav li a:hover{
-    background-color: #4d4d4dff;
-    color:#ae931dff;
+    background-color: #90AECF;
+    color:#321645ff;
     border-bottom-right-radius: 1em;
     border-top-right-radius: 1em;
     border-bottom-left-radius: 1em;
@@ -71,7 +71,7 @@ nav li a:hover{
 
 .checkbtn{
     font-size: 30px;
-    color: #4d4d4dff;
+    color: #90AECF;
     float: right;
     line-height: 60px;
     margin-right: 40px;
@@ -92,7 +92,7 @@ nav li a:hover{
 }
 
 .home-layer1{
-    background-color:#538385ff;
+    background-color:#321645ff;
 }
 
 .home-layer2{
@@ -101,19 +101,20 @@ nav li a:hover{
 }
 
 .home-layer3{
-    background-color: #a9ad9bff;
-    border-bottom-right-radius: 60%;
+    background-color: #512465ff;
+    border-bottom-right-radius: 30%;
     display: block;
 }
 
 .img-banner{
-    width: 50%;
-    max-width: 100%;
+    width: 30%;
+    max-width: 90%;
+    margin: 5%;
 }
 
 .home{
     position: absolute;
-    color:#b56034ff;
+    color:#90AECF;
     top: 25%;
     right: 10px;
     margin: 5% 5%;
@@ -143,7 +144,7 @@ nav li a:hover{
     padding:5px 5px;
 }
 .social-media:hover{
-    background-color:#4d4d4dff;
+    background-color:#321645ff;
     border-radius: 50%;
     transition: .2s;
 }
@@ -152,7 +153,7 @@ nav li a:hover{
 /*Main*/
 
 .main-layer1{
-    background-color: #538385ff;
+    background-color: #321645ff;
 }
 
 .main-layer2{
@@ -161,7 +162,7 @@ nav li a:hover{
 }
 
 .main-layer3{
-    background-color: #538385ff;
+    background-color: #321645ff;
     border-top-left-radius: 60%;
     padding: 10% 0;
 }
@@ -172,8 +173,8 @@ nav li a:hover{
     margin-right: auto;
     border:0;
     border-top: 1px solid;
-    box-shadow: 1px 1px 1px #b56034ff;
-    border-color: #b56034ff;
+    box-shadow: 1px 1px 1px #321645ff;
+    border-color: #321645ff;
 
 }
 .about-me-text{
@@ -181,8 +182,8 @@ nav li a:hover{
     top: 3%;
     left: 5%;
     display: inline-block;
-    background-color: #e6e2d9bf;
-    box-shadow: 0px 1px 5px #4d4d4dff;
+    background-color: #321645ff;
+    /* box-shadow: 0px 1px 5px; */
     border-radius: 0 0;
     margin: auto;
     width: 90%;
@@ -194,13 +195,13 @@ nav li a:hover{
     position: relative;
     font-size: 25px;
     font-weight: bold;
-    color: #4d4d4dff;
+    color: #90AECF;
 }
 
 .about-me-text p{
     position: relative;
     font-size: 20px;
-    color: #4d4d4dff;
+    color: #E1EFFF;
     padding: 1% 0%;
 }
 
@@ -213,16 +214,16 @@ nav li a:hover{
     margin-right: auto;
     border:0;
     border-top: 1px solid;
-    box-shadow: 1px 1px 1px #b56034ff;
-    border-color: #b56034ff;
-
+    box-shadow: 1px 1px 1px #90AECF;
+    border-color: #90AECF;
 }
+
 .p1{
     position: relative;
     left: 5%;
     display: inline-block;
-    background-color: #e6e2d9bf;
-    box-shadow: 0px 1px 5px #4d4d4dff;
+    background-color: #321645ff;
+    /* box-shadow: 0px 1px 5px #90AECF; */
     margin: auto;
     width: 90%;
     padding: 5%;
@@ -233,13 +234,13 @@ nav li a:hover{
     position: relative;
     font-size: 25px;
     font-weight: bold;
-    color: #4d4d4dff;
+    color: #90AECF;
 }
 
 .p1 h2{
     position: relative;
     font-size: 20px;
-    color: #4d4d4dff;
+    color: #90AECF;
     font-style:italic;
 }
 
@@ -249,7 +250,7 @@ nav li a:hover{
     width: 100%;
     font-size: 20px;
     padding: 1% 0%;
-    color: #4d4d4dff;
+    color: #90AECF;
 }
 
 .preprint{
@@ -281,7 +282,7 @@ nav li a:hover{
 }
 
 .preprint-link{
-    color: #4d4d4dff;
+    color: #90AECF;
     font-size: 30px;
     position: absolute;
     top:50%;
@@ -318,7 +319,7 @@ nav li a:hover{
     display: inline-block;
     alignment: center;
     background-color: whitesmoke;
-    box-shadow: 0px 1px 5px #4d4d4dff;
+    box-shadow: 0px 1px 5px #90AECF;
     border-radius: 10% 10%;
     margin: 4.3%;
     width: 16%;
@@ -341,9 +342,9 @@ nav li a:hover{
 
 /*Footer*/
 footer {
-    color: #e8e1bbff;
+    color: #90AECF;
     position: relative;
-    background-color: #458082ff;
+    background-color: #321645ff;
     padding: 1% 0;
     margin: auto;
     text-align: center;
@@ -373,7 +374,7 @@ footer {
 
 @media (max-width:1200px){
     label.logo{
-        font-size:30px;
+        font-size:25px;
         padding-left: 50px;
     }
     nav ul li a{
@@ -412,7 +413,7 @@ footer {
 
 @media (max-width:910px){
     label.logo{
-        font-size:26px;
+        font-size:20px;
         padding-left: 45px;
     }
     .checkbtn{
@@ -427,7 +428,7 @@ footer {
         top: 60px;
         left: -100%;
         text-align: center;
-        background: #538385ff;
+        background: #321645ff;
 
     }
     nav ul li{
@@ -443,26 +444,27 @@ footer {
 
     .home{
         position: absolute;
-        right: 10px;
+        right: 0px;
     }
 
     .home h1{
-        font-size: 23px;
+        font-size: 20px;
         letter-spacing: .5px;
-        padding: 5px 5px;
+        padding: 3px 3px;
     }
     .home h2{
-        font-size: 17px;
+        font-size: 15px;
         letter-spacing: .5px;
-        padding: 5px 5px;
+        padding: 3px 3px;
 
     }
 }
 
 
 @media (max-width:720px){
+
     label.logo{
-        font-size:20px;
+        font-size:15px;
         padding-left: 12px;
     }
 
@@ -478,7 +480,7 @@ footer {
         top: 60px;
         left: -100%;
         text-align: center;
-        background: #538385ff;
+        background: #321645ff;
 
     }
     nav ul li{
@@ -496,18 +498,18 @@ footer {
 
 
     .home-layer2{
-        border-bottom-right-radius: 23.2%;
+        border-bottom-right-radius: 0%;
     }
 
     .home-layer3{
         display: inline-block;
-        border-bottom-right-radius: 40%;
+        border-bottom-right-radius: 0%;
         max-width: 100%;
         padding-bottom: 10%;
     }
 
     .img-banner{
-        width: 100%;
+        width: 90%;
 
     }
     .home{
@@ -519,11 +521,11 @@ footer {
     }
 
     .home h1{
-        font-size: 23px;
+        font-size: 15px;
         letter-spacing: .5px;
     }
     .home h2{
-        font-size: 17px;
+        font-size: 12px;
 
 
     }
@@ -535,7 +537,7 @@ footer {
     }
 
     .main-layer3{
-        border-top-left-radius: 40%;
+        border-top-left-radius: 10%;
     }
 
 
@@ -555,7 +557,7 @@ footer {
 
     .about-me-text p{
         font-size: 15px;
-        padding: 1% 5%;
+        padding: 1% 1%;
 
     }
 
