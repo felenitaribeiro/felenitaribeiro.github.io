@@ -152,7 +152,7 @@ nav li a:hover{
 /*Main*/
 
 .main-layer1{
-    background-color: #a9ad9bff;
+    background-color: #538385ff;
 }
 
 .main-layer2{
@@ -178,13 +178,14 @@ nav li a:hover{
 }
 .about-me-text{
     position: relative;
-    left: 25%;
+    top: 3%;
+    left: 5%;
     display: inline-block;
     background-color: #e6e2d9bf;
     box-shadow: 0px 1px 5px #4d4d4dff;
-    border-radius: 15% 0;
+    border-radius: 0 0;
     margin: auto;
-    width: 75%;
+    width: 90%;
     padding: 7.5%;
 }
 
@@ -207,7 +208,7 @@ nav li a:hover{
 /*Main - Projects*/
 
 .p1 hr {
-    width: 70%;
+    width: 0%;
     margin-left: auto;
     margin-right: auto;
     border:0;
@@ -218,12 +219,12 @@ nav li a:hover{
 }
 .p1{
     position: relative;
-    left: 10%;
+    left: 5%;
     display: inline-block;
     background-color: #e6e2d9bf;
     box-shadow: 0px 1px 5px #4d4d4dff;
     margin: auto;
-    width: 80%;
+    width: 90%;
     padding: 5%;
 }
 
@@ -540,11 +541,11 @@ footer {
 
 
     .about-me-text{
-        border-radius: 10% 0;
+        border-radius: 0 0;
         margin: auto;
         padding: 4%;
-        left: 15%;
-        width: 85%;
+        left: 5%;
+        width: 90%;
     }
 
 
@@ -561,8 +562,8 @@ footer {
     .p1{
         margin: auto;
         padding: 4%;
-        left: 15%;
-        width: 85%;
+        left: 5%;
+        width: 90%;
     }
 
 
