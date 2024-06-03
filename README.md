@@ -1,6 +1,6 @@
 # felenitaribeiro.github.io
 
-This repository includes all files and codes (in HTML and CSS) for my personal website.
+This repository includes all files and code (in HTML and CSS) for my personal website.
 
 ## License
 
