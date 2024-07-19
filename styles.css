@@ -35,6 +35,22 @@ label.logo{
     padding: 0 50px;
     letter-spacing: .5px;
     font-weight: bold;
+
+    @media (max-width:1200px){
+        font-size:25px;
+        padding-left: 50px;
+    }
+
+    @media (max-width:910px){
+        font-size:20px;
+        padding-left: 45px;
+    }
+
+    @media (max-width:720px){
+        font-size:15px;
+        padding-left: 12px;
+    }
+
 }
 nav ul{
     float: right;
@@ -55,6 +71,19 @@ nav ul li a{
     padding: 5px 15px;
     letter-spacing: 1px;
 
+    @media (max-width:1200px){
+        font-size: 20px;
+    }
+
+    @media (max-width:910px){
+        font-size: 17px;
+        color: #e8e1bbff;
+    }
+
+    @media (max-width:720px){
+        font-size: 17px;
+        color: #e8e1bbff;
+    }
 }
 nav li a:hover{
     background-color: #90AECF;
@@ -126,14 +155,46 @@ nav li a:hover{
     font-size: 50px;
     letter-spacing: .75px;
     padding: 5px 5px;
-}
+
+    @media (max-width:1500px){
+            font-size: 40px;
+        }
+    @media (max-width:1410px){
+                font-size: 35px;
+        }
+    @media (max-width:1200px){
+                font-size: 30px;
+                letter-spacing: .5px;
+            }
+    @media (max-width:910px){
+            font-size: 20px;
+            letter-spacing: .5px;
+            padding: 3px 3px;
+        }
+   }
+
+
 .home h2{
     font-size: 30px;
     letter-spacing: .75px;
     padding: 5px 5px;
 
-}
-
+    @media (max-width:1500px){
+            font-size: 28px;
+        }
+    @media (max-width:1410px){
+                font-size: 24px;
+            }
+    @media (max-width:1200px){
+                font-size: 18px;
+                letter-spacing: .5px;
+            }
+    @media (max-width:910px){
+        font-size: 15px;
+        letter-spacing: .5px;
+        padding: 3px 3px;
+        }
+    }
 
 
 /* Icons for social media */
@@ -353,40 +414,8 @@ footer {
 
 
 
-@media (max-width:1500px){
-    .home h1{
-        font-size: 40px;
-    }
-    .home h2{
-        font-size: 28px;
-    }
-}
-
-@media (max-width:1410px){
-    .home h1{
-        font-size: 35px;
-    }
-    .home h2{
-        font-size: 24px;
-    }
-}
-
 @media (max-width:1200px){
-    label.logo{
-        font-size:25px;
-        padding-left: 50px;
-    }
-    nav ul li a{
-        font-size: 20px;
-    }
-    .home h1{
-        font-size: 30px;
-        letter-spacing: .5px;
-    }
-    .home h2{
-        font-size: 18px;
-        letter-spacing: .5px;
-    }
+
     .conferences{display: block}
 
     .block1{display: inline-block;
@@ -411,10 +440,6 @@ footer {
 }
 
 @media (max-width:910px){
-    label.logo{
-        font-size:20px;
-        padding-left: 45px;
-    }
     .checkbtn{
         display: block;
     }
@@ -433,10 +458,7 @@ footer {
     nav ul li{
         display: block;
     }
-    nav ul li a{
-        font-size: 17px;
-        color: #e8e1bbff;
-    }
+
     #check:checked ~ ul{
         left: 0;
     }
@@ -445,27 +467,10 @@ footer {
         position: absolute;
         right: 0px;
     }
-
-    .home h1{
-        font-size: 20px;
-        letter-spacing: .5px;
-        padding: 3px 3px;
-    }
-    .home h2{
-        font-size: 15px;
-        letter-spacing: .5px;
-        padding: 3px 3px;
-
-    }
 }
 
 
 @media (max-width:720px){
-
-    label.logo{
-        font-size:15px;
-        padding-left: 12px;
-    }
 
     .checkbtn{
         display: block;
@@ -485,10 +490,7 @@ footer {
     nav ul li{
         display: block;
     }
-    nav ul li a{
-        font-size: 17px;
-        color: #e8e1bbff;
-    }
+
     #check:checked ~ ul{
         left: 0;
     }
@@ -519,15 +521,7 @@ footer {
         width: 100%;
     }
 
-    .home h1{
-        font-size: 15px;
-        letter-spacing: .5px;
-    }
-    .home h2{
-        font-size: 12px;
 
-
-    }
     /*Fix logo sizes*/
 
     /*Main*/
