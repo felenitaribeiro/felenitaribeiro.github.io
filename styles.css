@@ -305,7 +305,7 @@ nav li a:hover{
     position: relative;
     left: 5%;
     display: inline-block;
-    background-color: #321645ff;
+    background-color: #4b2067;
     /* box-shadow: 0px 1px 5px #90AECF; */
     margin: auto;
     width: 90%;
@@ -336,7 +336,7 @@ nav li a:hover{
     color: #90AECF;
 }
 
-.preprint{
+.manuscript{
     position: relative;
     width:100%;
     background-color: whitesmoke;
@@ -364,7 +364,7 @@ nav li a:hover{
     background-color: whitesmoke;
 }
 
-.preprint-link{
+.manuscript-link{
     color: #90AECF;
     font-size: 30px;
     position: absolute;
@@ -378,7 +378,7 @@ nav li a:hover{
     text-align: center;
 
 }
-.preprint:hover .overlay-preprint{
+.manuscript:hover .overlay-preprint{
     opacity: 1;
 }
 
