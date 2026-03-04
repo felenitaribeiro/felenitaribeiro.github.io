@@ -22,6 +22,7 @@ nav{
     position: sticky;
     top:0;
     z-index: 1;
+    overflow: hidden;
     @media (max-width:720px){
         position: fixed;
         height: 60px;
@@ -132,96 +133,71 @@ nav li a:hover{
 }
 
 
-/*Banner*/
+/*Page Layout - Sidebar + Content*/
 
-.banner{
-    position: relative;
-    margin: auto;
+.page-layout {
+    display: flex;
+    gap: 30px;
+    padding: 10px 3% 20px;
+    width: 100%;
+    align-items: flex-start;
 }
 
-.home-layer1{
-    background-color:#321645ff;
+.page-layout > * {
+    margin-top: 0;
 }
 
-.home-layer2{
-    background-color: #87b8baff;
-    border-bottom-right-radius: 35%;
-}
-
-.home-layer3{
+.sidebar {
+    position: sticky;
+    top: 75px;
+    width: 280px;
+    min-width: 280px;
     background-color: #512465ff;
-    border-bottom-right-radius: 30%;
-    display: block;
+    border-radius: 12px;
+    padding: 30px 20px;
+    text-align: center;
 }
 
-.img-banner{
-    width: 30%;
-    max-width: 90%;
-    margin: 5%;
+.sidebar-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
 }
 
-.home{
-    position: absolute;
-    color:#90AECF;
-    top: 25%;
-    right: 10px;
-    margin: 5% 5%;
-    padding: auto;
-    @media (max-width:910px){
-            position: absolute;
-            right: 0px;
-        }
+.sidebar h1 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #90AECF;
+    margin-bottom: 10px;
 }
 
+.sidebar h2 {
+    font-size: 14px;
+    font-weight: normal;
+    color: #E1EFFF;
+    margin-bottom: 6px;
+    line-height: 1.4;
+}
 
-.home h1{
-    font-size: 50px;
-    letter-spacing: .75px;
-    padding: 5px 5px;
+.sidebar h2.sidebar-role-primary {
+    font-size: 16px;
+    font-weight: bold;
+}
 
-    @media (max-width:1500px){
-            font-size: 40px;
-        }
-    @media (max-width:1410px){
-                font-size: 35px;
-        }
-    @media (max-width:1200px){
-                font-size: 30px;
-                letter-spacing: .5px;
-            }
-    @media (max-width:910px){
-            font-size: 20px;
-            letter-spacing: .5px;
-            padding: 3px 3px;
-        }
-   }
+.sidebar-links {
+    margin-top: 20px;
+}
 
-
-.home h2{
-    font-size: 30px;
-    letter-spacing: .75px;
-    padding: 5px 5px;
-
-    @media (max-width:1500px){
-            font-size: 28px;
-        }
-    @media (max-width:1410px){
-                font-size: 24px;
-            }
-    @media (max-width:1200px){
-                font-size: 18px;
-                letter-spacing: .5px;
-            }
-    @media (max-width:910px){
-        font-size: 15px;
-        letter-spacing: .5px;
-        padding: 3px 3px;
-        }
-    }
-
+.content {
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    padding-top: 3px;
+}
 
 /* Icons for social media */
-
 
 .social-media{
     padding:5px 5px;
@@ -239,17 +215,6 @@ nav li a:hover{
     background-color: #321645ff;
 }
 
-.main-layer2{
-    background-color: #87b8baff;
-    border-top-left-radius: 35%;
-}
-
-.main-layer3{
-    background-color: #321645ff;
-    border-top-left-radius: 60%;
-    padding: 10% 0;
-}
-
 .about-me-text hr {
     width: 15%;
     margin-left: auto;
@@ -262,15 +227,11 @@ nav li a:hover{
 }
 .about-me-text{
     position: relative;
-    top: 3%;
-    left: 5%;
-    display: inline-block;
+    display: block;
     background-color: #321645ff;
-    /* box-shadow: 0px 1px 5px; */
     border-radius: 0 0;
-    margin: auto;
-    width: 90%;
-    padding: 7.5%;
+    width: 100%;
+    padding: 0;
 }
 
 
@@ -288,6 +249,63 @@ nav li a:hover{
     padding: 1% 0%;
 }
 
+.about-me-card {
+    background-color: #512465ff;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+
+/*Funding Section*/
+
+.funding-section {
+    background-color: #321645ff;
+    padding: 2% 0% 0%;
+}
+
+.funding-section h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #90AECF;
+}
+
+.funding-section hr {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    border-top: 1px solid;
+    box-shadow: 1px 1px 1px #321645ff;
+    border-color: #321645ff;
+}
+
+.funding-card {
+    background-color: #512465ff;
+    border-radius: 12px;
+    padding: 30px;
+}
+
+.funding-card-top {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.funding-logo {
+    width: 160px;
+    min-width: 160px;
+    border-radius: 8px;
+}
+
+.funding-card p {
+    font-size: 20px;
+    color: #E1EFFF;
+    line-height: 1.6;
+}
+
+.funding-card strong {
+    color: #90AECF;
+}
 
 /*Main - Projects*/
 
@@ -423,6 +441,230 @@ nav li a:hover{
     margin: auto;
 }
 
+/*Research Areas*/
+
+.research-areas {
+    background-color: #321645ff;
+}
+
+.research-areas-container {
+    position: relative;
+    display: block;
+    background-color: #321645ff;
+    width: 100%;
+    padding: 2% 0% 0%;
+}
+
+.research-areas-container h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #90AECF;
+}
+
+.research-areas-container hr {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    border-top: 1px solid;
+    box-shadow: 1px 1px 1px #321645ff;
+    border-color: #321645ff;
+}
+
+.research-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.research-card {
+    display: block;
+    flex: 1;
+    background-color: #512465ff;
+    border-radius: 12px;
+    padding: 30px;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.research-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(144, 174, 207, 0.2);
+}
+
+.research-card-number {
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(144, 174, 207, 0.3);
+    margin-bottom: 12px;
+}
+
+.research-card h2 {
+    font-size: 20px;
+    color: #90AECF;
+    margin-bottom: 12px;
+    line-height: 1.3;
+}
+
+.research-card p {
+    font-size: 16px;
+    color: #E1EFFF;
+    line-height: 1.5;
+}
+
+/*Research Area Detail (research.html)*/
+
+.research-area-detail {
+    display: block;
+    background-color: #512465ff;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 30px;
+    scroll-margin-top: 120px;
+}
+
+.research-area-detail:last-child {
+    margin-bottom: 0;
+}
+
+.research-area-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.research-area-header .research-card-number {
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
+
+.research-area-detail h1 {
+    font-size: 25px;
+    font-weight: bold;
+    color: #90AECF;
+}
+
+.research-area-detail hr {
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    border-top: 1px solid;
+    box-shadow: 1px 1px 1px #512465ff;
+    border-color: #512465ff;
+}
+
+.research-area-detail p {
+    font-size: 20px;
+    color: #E1EFFF;
+    padding: 1% 0%;
+    line-height: 1.6;
+}
+
+.publication-list {
+    margin-top: 20px;
+}
+
+.publication-list h2 {
+    font-size: 20px;
+    color: #90AECF;
+    margin-bottom: 12px;
+    font-style: italic;
+}
+
+.publication-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.publication-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(144, 174, 207, 0.15);
+}
+
+.publication-list li:last-child {
+    border-bottom: none;
+}
+
+.publication-list a {
+    color: #E1EFFF;
+    text-decoration: none;
+    font-size: 17px;
+    line-height: 1.5;
+    transition: color 0.2s ease;
+}
+
+.publication-list a:hover {
+    color: #90AECF;
+}
+
+.publication-list em {
+    color: #90AECF;
+}
+
+.inline-link {
+    color: #90AECF;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease;
+}
+
+.inline-link:hover {
+    color: #E1EFFF;
+}
+
+/*News Page*/
+
+.news-entry {
+    background-color: #512465ff;
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 15px;
+}
+
+.news-entry:last-child {
+    margin-bottom: 0;
+}
+
+.news-date {
+    font-size: 14px;
+    color: rgba(144, 174, 207, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.news-entry h2 {
+    font-size: 22px;
+    color: #90AECF;
+    margin-bottom: 12px;
+}
+
+.news-entry p {
+    font-size: 20px;
+    color: #E1EFFF;
+    line-height: 1.6;
+    padding: 1% 0%;
+}
+
+.news-project-tag {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(144, 174, 207, 0.15);
+    font-size: 14px;
+    color: rgba(144, 174, 207, 0.6);
+}
+
+.funding-latest-news {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(144, 174, 207, 0.15);
+    font-size: 16px;
+    color: #90AECF;
+    width: 100%;
+}
+
 /*Footer*/
 footer {
     color: #90AECF;
@@ -443,46 +685,37 @@ footer {
     main {
         margin-top: 250px;
     }
-    .home-layer2{
-        border-bottom-right-radius: 0%;
+
+    .page-layout {
+        flex-direction: column;
+        padding: 15px 3%;
+        gap: 15px;
     }
 
-    .home-layer3{
-        display: inline-block;
-        border-bottom-right-radius: 0%;
-        max-width: 100%;
-        padding-bottom: 10%;
-    }
-
-    .img-banner{
-        width: 90%;
-
-    }
-    .home{
-        position: relative;
-        display: inline-block;
-        margin-right: auto;
-        margin-left: auto;
+    .sidebar {
         width: 100%;
-        }
-    /*Fix logo sizes*/
-
-    /*Main*/
-    .main-layer2{
-    border-top-left-radius: 23.2%;
+        min-width: unset;
+        padding: 20px;
     }
 
-    .main-layer3{
-        border-top-left-radius: 10%;
+    .sidebar-photo {
+        width: 150px;
+        height: 150px;
     }
 
+    .sidebar h1 {
+        font-size: 20px;
+    }
+
+    .sidebar h2 {
+        font-size: 13px;
+    }
 
     .about-me-text{
         border-radius: 0 0;
         margin: auto;
         padding: 4%;
-        left: 5%;
-        width: 90%;
+        width: 100%;
     }
 
     .about-me-text h1{
@@ -492,7 +725,31 @@ footer {
     .about-me-text p{
         font-size: 15px;
         padding: 1% 1%;
+    }
 
+    .about-me-card {
+        padding: 20px;
+    }
+
+    .funding-section h1 {
+        font-size: 20px;
+    }
+
+    .funding-card {
+        padding: 20px;
+    }
+
+    .funding-card-top {
+        flex-direction: column;
+    }
+
+    .funding-logo {
+        width: 120px;
+        min-width: 120px;
+    }
+
+    .funding-card p {
+        font-size: 15px;
     }
 
     .p1{
@@ -522,5 +779,78 @@ footer {
 
     footer{
         font-size: 15px;
+    }
+
+    /*News Page*/
+    .news-entry {
+        padding: 20px;
+    }
+
+    .news-entry h2 {
+        font-size: 18px;
+    }
+
+    .news-entry p {
+        font-size: 15px;
+    }
+
+    /*Research Area Detail*/
+    .research-area-detail {
+        padding: 4%;
+        width: 100%;
+    }
+
+    .research-area-header {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .research-area-detail h1 {
+        font-size: 18px;
+    }
+
+    .research-area-detail p {
+        font-size: 15px;
+    }
+
+    .publication-list a {
+        font-size: 14px;
+    }
+
+    .publication-list h2 {
+        font-size: 17px;
+    }
+
+    /*Research Areas*/
+    .research-areas-container {
+        padding: 4% 0;
+        width: 100%;
+    }
+
+    .research-areas-container h1 {
+        font-size: 20px;
+    }
+
+    .research-cards {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .research-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .research-card-number {
+        font-size: 30px;
+    }
+
+    .research-card h2 {
+        font-size: 17px;
+    }
+
+    .research-card p {
+        font-size: 14px;
     }
 }

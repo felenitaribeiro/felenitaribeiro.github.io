@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="images/icon.png">
     <link rel="stylesheet" href="styles.css?v=2">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <title>Dr. Fernanda Ribeiro</title>
+    <title>Fernanda Ribeiro - Research</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
@@ -88,77 +88,143 @@
         </aside>
 
         <div class="content">
-            <section class="about-me-text">
-                <h1 align="center">About me</h1>
+            <div id="functional-brain-mapping" class="research-area-detail">
+                <div class="research-area-header">
+                    <div class="research-card-number">01</div>
+                    <h1>Functional Brain Mapping with Deep Learning</h1>
+                </div>
                 <hr>
                 <br>
-                <div class="about-me-card">
-                <p align="justify"> Hi there! I'm Fernanda, a Brazilian-Australian academic living in Germany.
-                    Currently, I'm a Marie Curie fellow at Justus-Liebig University Giessen with the Computational
-                    Cognitive Neuroscience and Quantitative Psychiatry group led by Prof Martin Hebart. I aim to
-                    reveal what factors determine interindividual differences in the topographic organization of the 
-                    human visual cortex. With that aim, I have developed a general toolbox for retinotopic mapping from 
-                    brain anatomy using deep learning, which will allow me and many others to uncover the underlying factors
-                    of individual differences and developmental changes in the functional organization of the visual cortex.
-                </p>
                 <p align="justify">
-                    To tackle this and other research
-                    questions, I am leveraging my interdisciplinary background in Biophysics (Bachelor's
-                    degree), Neuroscience (Master's degree), and now the intersection of AI and imaging.
-                    I am interested in (geometric) deep learning, functional brain mapping, vision, and explainable
-                    and fair AI research.
+                    The functional organization of human visual cortex is tightly coupled with underlying anatomy.
+                    While previous approaches could predict gross retinotopic organization using atlas-based templates,
+                    they were unable to capture the detailed idiosyncrasies seen in individual brains. To address this,
+                    I developed a geometric deep learning model &mdash; DeepRetinotopy &mdash; capable of exploiting the
+                    actual structure of the cortex to predict the retinotopic organization of visual cortex from
+                    anatomy alone, capturing nuanced individual variations. I have since expanded this work into a
+                    toolbox for retinotopic mapping (see <a class="inline-link" href="news.html">News</a>).
                 </p>
-                <p align="justify"><b>But life is not all about research, right?!</b> I love moving my body in my free
-                    time! I love hiking and being in nature. Since it is not always easy to be near nature living in the city, I've been finding
-                    a new passion in weight lifting and running with friends. I also love travelling and experimenting with different cuisines
-                    (but I've been a vegetarian for 7 years now).
-                </p>
+                <div class="publication-list">
+                    <h2>Publications</h2>
+                    <ul>
+                        <li>
+                            <a href="https://doi.org/10.1167/jov.25.8.14">
+                                Ribeiro, Benson &amp; Puckett (2025). Human retinotopic mapping: From empirical to computational models of retinotopy. <em>Journal of Vision</em>.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://arxiv.org/abs/2203.08312">
+                                Ribeiro, Bollmann, Cunnington &amp; Puckett (2022). An explainability framework for cortical surface-based deep learning. <em>arXiv preprint</em>.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://doi.org/10.1016/j.neuroimage.2021.118624">
+                                Ribeiro, Bollmann &amp; Puckett (2021). Predicting the retinotopic organization of human visual cortex from anatomy using geometric deep learning. <em>NeuroImage</em>.
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
+            </div>
 
-            <section id="funding" class="funding-section">
-                <h1 align="center">Current Funding</h1>
+            <div id="individual-variability" class="research-area-detail" data-aos="fade-up">
+                <div class="research-area-header">
+                    <div class="research-card-number">02</div>
+                    <h1>Interindividual Variability in Brain Organization</h1>
+                </div>
                 <hr>
                 <br>
-                <div class="funding-card">
-                    <div class="funding-card-top">
-                        <img class="funding-logo" src="images/msca_action_logo.jpeg" alt="Marie Skłodowska-Curie Actions logo">
-                        <p align="justify">
-                            <strong>INVISION — Interindividual Variability in the Structural and Functional Organization of Human Visual Cortex</strong><br>
-                            This project investigates why individual differences exist in how the visual cortex is organized, aiming to identify biological and experiential factors that explain these variations and their potential impact on visual perception.
-                            <a class="inline-link" href="https://cordis.europa.eu/project/id/101146996">Read the full abstract</a>.
-                        </p>
-                    </div>
-                    <div class="funding-latest-news">
-                        Latest: <a class="inline-link" href="news.html">New preprint &mdash; DeepRetinotopy toolbox</a>
-                    </div>
+                <p align="justify">
+                    Are all human brains identical in terms of cortical organization? Not quite. While the general layout of the visual cortex is consistent across individuals, 
+                    the precise organization of visual field maps can vary significantly.
+                    My research has uncovered a previously unknown degree of variability in the
+                    organization of V2 and V3 among individuals. Contrary to the traditional view of stereotypical
+                    arrangements, only one-third of the studied individuals exhibited the expected pattern;
+                    the remaining individuals showcased more complex geometric mappings of the retina onto the cortex.
+                    Beyond variability in topographic organization, I'm interested in understanding more broadly what makes individual brains so unique.
+                </p>
+                <div class="publication-list">
+                    <h2>Publications</h2>
+                    <ul>
+                        <li>
+                            <a href="https://elifesciences.org/articles/86439">
+                                Ribeiro, York, Zavitz, Bollmann, Rosa &amp; Puckett (2023). Variability of visual field maps in human early extrastriate cortex challenges the canonical model of organization of V2 and V3. <em>eLife</em>.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://doi.org/10.1162/netn_a_00189">
+                                Ribeiro, dos Santos, Sato, Pinaya &amp; Biazoli (2021). Inferring the heritability of large-scale functional networks with a multivariate ACE modeling approach. <em>Network Neuroscience</em>.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://doi.org/10.1364/BOE.10.002889">
+                                Rodrigues, Ribeiro, Sato, Mesquita &amp; Biazoli (2019). Identifying individuals using fNIRS-based cortical connectomes. <em>Biomedical Optics Express</em>.
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-            </section>
+            </div>
 
-            <section class="research-areas">
-                <div class="research-areas-container" data-aos="fade-up">
-                    <h1 align="center">Research Areas</h1>
-                    <hr>
-                    <br>
-                    <div class="research-cards">
-                        <a class="research-card" href="research.html#functional-brain-mapping">
-                            <div class="research-card-number">01</div>
-                            <h2>Functional Brain Mapping with Deep Learning</h2>
-                            <p>Building computational tools that predict the functional organization of visual cortex from brain anatomy.</p>
-                        </a>
-                        <a class="research-card" href="research.html#individual-variability">
-                            <div class="research-card-number">02</div>
-                            <h2>Interindividual Variability in Brain Organization</h2>
-                            <p>Understanding how brain structure and function differ across individuals — from connectome fingerprinting to the topographic organization of the visual cortex.</p>
-                        </a>
-                        <a class="research-card" href="research.html#tools-open-science">
-                            <div class="research-card-number">03</div>
-                            <h2>Tools &amp; Data for Medical Imaging &amp; Open Science</h2>
-                            <p>Building and sharing tools and data for medical image segmentation and reproducible neuroimaging.</p>
-                        </a>
-                    </div>
+            <div id="tools-open-science" class="research-area-detail" data-aos="fade-up">
+                <div class="research-area-header">
+                    <div class="research-card-number">03</div>
+                    <h1>Tools &amp; Data for Medical Imaging &amp; Open Science</h1>
                 </div>
-            </section>
+                <hr>
+                <br>
+                <p align="justify">
+                    Beyond fundamental neuroscience, I contribute to building and sharing tools and datasets for
+                    medical image segmentation and reproducible neuroimaging. This includes VesselBoost, a toolbox for
+                    small blood vessel segmentation; the first annotated, openly available MRI dataset of tongue
+                    musculature; and contributions to <a class="inline-link" href="https://www.neurodesk.org/">Neurodesk</a>, a community-oriented platform for accessible and
+                    reproducible neuroimaging analysis.
+                </p>
+                <div class="publication-list">
+                    <h2>Publications</h2>
+                    <ul>
+                        <li>
+                            <a href="https://doi.org/10.1038/s41597-025-05092-8">
+                                Ribeiro et al. (2025). An annotated multi-site and multi-contrast MRI dataset for the study of the human tongue musculature. <em>Scientific Data</em>.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://doi.org/10.1016/j.compbiomed.2025.110824">
+                                Shaw, Ribeiro et al. (2025). Segmentation of the human tongue musculature using MRI. <em>Computers in Biology and Medicine</em>.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://doi.org/10.52294/001c.144107">
+                                Dao, Masson-Trottier, Ribeiro et al. (2025). Democratizing open neuroimaging: Neurodesk's approach to open data accessibility and utilization. <em>Aperture Neuro</em>.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://doi.org/10.52294/001c.123217">
+                                Xu*, Ribeiro* et al. (2024). VesselBoost: A Python toolbox for small blood vessel segmentation in human magnetic resonance angiography data. <em>Aperture Neuro</em>.
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://doi.org/10.1038/s41592-023-02145-x">
+                                Renton, Dao, ..., Ribeiro et al. (2024). Neurodesk: An accessible, flexible and portable data analysis environment for reproducible neuroimaging. <em>Nature Methods</em>.
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="research-area-detail" data-aos="fade-up">
+                <div class="research-area-header">
+                    <div class="research-card-number">04</div>
+                    <h1>Other Interests</h1>
+                </div>
+                <hr>
+                <br>
+                <p align="justify">
+                    Beyond the research areas above, I am broadly interested in geometric deep learning,
+                    fairness in AI, and applications of artificial intelligence for neuroimaging.
+                    For a complete list of publications, please check out my
+                    <a class="inline-link" href="files/2026_Ribeiro_CV.pdf">CV</a> or my
+                    <a class="inline-link" href="https://scholar.google.com.au/citations?user=Rp4--S4AAAAJ&hl=en">Google Scholar</a>.
+                </p>
+            </div>
         </div>
     </div>
 </main>

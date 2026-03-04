@@ -5,7 +5,7 @@
     <link rel="icon" type="image/png" href="images/icon.png">
     <link rel="stylesheet" href="styles.css?v=2">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
-    <title>Dr. Fernanda Ribeiro</title>
+    <title>Fernanda Ribeiro - News</title>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
 </head>
@@ -88,77 +88,22 @@
         </aside>
 
         <div class="content">
-            <section class="about-me-text">
-                <h1 align="center">About me</h1>
-                <hr>
-                <br>
-                <div class="about-me-card">
-                <p align="justify"> Hi there! I'm Fernanda, a Brazilian-Australian academic living in Germany.
-                    Currently, I'm a Marie Curie fellow at Justus-Liebig University Giessen with the Computational
-                    Cognitive Neuroscience and Quantitative Psychiatry group led by Prof Martin Hebart. I aim to
-                    reveal what factors determine interindividual differences in the topographic organization of the 
-                    human visual cortex. With that aim, I have developed a general toolbox for retinotopic mapping from 
-                    brain anatomy using deep learning, which will allow me and many others to uncover the underlying factors
-                    of individual differences and developmental changes in the functional organization of the visual cortex.
-                </p>
+            <div class="news-entry" data-aos="fade-up">
+                <div class="news-date">November 2025</div>
+                <h2>New preprint: DeepRetinotopy toolbox</h2>
                 <p align="justify">
-                    To tackle this and other research
-                    questions, I am leveraging my interdisciplinary background in Biophysics (Bachelor's
-                    degree), Neuroscience (Master's degree), and now the intersection of AI and imaging.
-                    I am interested in (geometric) deep learning, functional brain mapping, vision, and explainable
-                    and fair AI research.
+                    This work introduces the DeepRetinotopy toolbox, a general, dataset-agnostic application that enables the prediction of functional topographic maps of the human visual cortex from cortical anatomy alone &mdash; without the need to acquire functional brain data.
+                    The toolbox requires only a standard anatomical scan (a T1-weighted MRI image), which represents a significant advance in the general applicability of deep learning techniques to predicting topographic organization. 
+                    We have comprehensively validated the toolbox for generalisability across diverse acquisition protocols and demonstrate how it can be readily applied to existing large-scale datasets, using over 11,000 anatomical brain scans. 
+                    This provides a strong framework for accurate, individual-specific prediction of functional topographies that govern the functional organisation of the visual cortex, and the brain more generally.
                 </p>
-                <p align="justify"><b>But life is not all about research, right?!</b> I love moving my body in my free
-                    time! I love hiking and being in nature. Since it is not always easy to be near nature living in the city, I've been finding
-                    a new passion in weight lifting and running with friends. I also love travelling and experimenting with different cuisines
-                    (but I've been a vegetarian for 7 years now).
+                <p>
+                    <a class="inline-link" href="https://www.biorxiv.org/content/10.1101/2025.11.27.690210">Read the preprint on bioRxiv</a>
                 </p>
+                <div class="news-project-tag">
+                    Part of the <a class="inline-link" href="index.html#funding">INVISION</a> project
                 </div>
-            </section>
-
-            <section id="funding" class="funding-section">
-                <h1 align="center">Current Funding</h1>
-                <hr>
-                <br>
-                <div class="funding-card">
-                    <div class="funding-card-top">
-                        <img class="funding-logo" src="images/msca_action_logo.jpeg" alt="Marie Skłodowska-Curie Actions logo">
-                        <p align="justify">
-                            <strong>INVISION — Interindividual Variability in the Structural and Functional Organization of Human Visual Cortex</strong><br>
-                            This project investigates why individual differences exist in how the visual cortex is organized, aiming to identify biological and experiential factors that explain these variations and their potential impact on visual perception.
-                            <a class="inline-link" href="https://cordis.europa.eu/project/id/101146996">Read the full abstract</a>.
-                        </p>
-                    </div>
-                    <div class="funding-latest-news">
-                        Latest: <a class="inline-link" href="news.html">New preprint &mdash; DeepRetinotopy toolbox</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="research-areas">
-                <div class="research-areas-container" data-aos="fade-up">
-                    <h1 align="center">Research Areas</h1>
-                    <hr>
-                    <br>
-                    <div class="research-cards">
-                        <a class="research-card" href="research.html#functional-brain-mapping">
-                            <div class="research-card-number">01</div>
-                            <h2>Functional Brain Mapping with Deep Learning</h2>
-                            <p>Building computational tools that predict the functional organization of visual cortex from brain anatomy.</p>
-                        </a>
-                        <a class="research-card" href="research.html#individual-variability">
-                            <div class="research-card-number">02</div>
-                            <h2>Interindividual Variability in Brain Organization</h2>
-                            <p>Understanding how brain structure and function differ across individuals — from connectome fingerprinting to the topographic organization of the visual cortex.</p>
-                        </a>
-                        <a class="research-card" href="research.html#tools-open-science">
-                            <div class="research-card-number">03</div>
-                            <h2>Tools &amp; Data for Medical Imaging &amp; Open Science</h2>
-                            <p>Building and sharing tools and data for medical image segmentation and reproducible neuroimaging.</p>
-                        </a>
-                    </div>
-                </div>
-            </section>
+            </div>
         </div>
     </div>
 </main>
